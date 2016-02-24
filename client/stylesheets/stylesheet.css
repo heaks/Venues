@@ -1,0 +1,36 @@
+.container{
+    width: 70%;
+    padding: 0;
+}
+
+.map-container{
+    width: 100%;
+    height: 500px;
+}
+
+.venues-display{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:100%;
+}
+
+.queries-display{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width:100%;
+    margin: 25px auto;
+}
+
+th, td {
+    padding: 0.25rem;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table thead{
+    font-weight: bold;
+}
+
+.exportCSV{
+    float:right;
+}

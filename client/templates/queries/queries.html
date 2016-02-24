@@ -1,0 +1,19 @@
+<template name="queries">
+    {{#if queriesFind}}
+    <table class="queries-display table-striped table-hover">
+        <thead>
+            <tr>
+                <td>Request</td>
+                <td>Search Point</td>
+                <td>Radius</td>
+                <td>Date</td>
+            </tr>
+        </thead>
+        <tbody>
+        {{#each queriesFind}}
+            {{>query}}
+        {{/each}}
+        </tbody>
+    </table>
+    {{/if}}
+</template>

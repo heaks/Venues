@@ -1,0 +1,27 @@
+<template name="venues">
+    <div>
+    <input type="text" class="venue-finder" placeholder="Enter the venue" name="venueName">
+
+    <button id="export-csv" class="exportCSV btn btn-success">Export CSV</button>
+    <h3>({{showVenuesCount}})Venues Found</h3>
+
+    </div>
+    {{#if venuesNumber}}
+    <table class="venues-display table-striped table-hover">
+        <thead>
+        <tr>
+            <td>Name</td>
+            <td>City</td>
+            <td>Street Address</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+        </tr>
+        </thead>
+        <tbody>
+            {{#each venuesNumber}}
+                {{>venue}}
+            {{/each}}
+        </tbody>
+</table>
+    {{/if}}
+</template>
