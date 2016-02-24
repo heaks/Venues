@@ -14,6 +14,7 @@ Template.googlemap.helpers({
 });
 
 Template.googlemap.onCreated(function() {
+    console.log(this);
     var variables = this.data.variables;
     GoogleMaps.ready("exampleMap", function(map) {
         variables.mapInstance.set(map.instance);
